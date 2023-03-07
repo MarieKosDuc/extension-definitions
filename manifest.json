@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Technical definitions",
+    "version": "1.0",
+    "description": "An easy way to learn technical definitions!",
+    "author": "Marie Koscianski-Ducharlet",
+    "chrome_url_overrides" : {
+      "newtab": "index.html"
+    },
+    "permissions": [
+      "storage",
+      "https://api.hackernoon.com/"
+    ],
+    "icons": {
+      "16": "icon16.png",
+      "128": "icon128.png"
+    }
+  }
