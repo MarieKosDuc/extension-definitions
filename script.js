@@ -1,8 +1,6 @@
 // Setting variables
-let apiUrl = "https://projet-api-sigma.vercel.app/definition";
-let button = document.getElementById("get-new");
-
-console.log("ok");
+let apiUrl = "https://projet-api-mariekosduc.vercel.app/definition";
+let button = document.getElementById("get-new-definition");
 
 // Fetch API to display a tech definition
 const getDefinition = () => {
@@ -14,7 +12,7 @@ fetch(apiUrl)
   })
   .then(function (value) {
     // produit
-    document.getElementById("title").innerHTML = value.title; // affiche l'intitulé
+    document.getElementById("title").innerHTML = value.title + " :"; // affiche l'intitulé
     document.getElementById("definition").innerHTML = value.description; // affiche la définition
   })
   .catch(function (err) {});
