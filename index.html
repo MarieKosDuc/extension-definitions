@@ -9,17 +9,78 @@
     
 </head>
 <body>
+    <!-- background-image -->
     <div id="background-image" class="bg-[url('./images/mountains.jpg')] bg-cover h-screen w-screen">
-        <div id="flex-contain" class="flex justify-center px-5">            
-            <div id="def-container" class="z-0 my-10 bg-gray-50 rounded-md px-5 py-1 max-w-4xl opacity-75 py-10 shadow-md shadow-slate-800">
-                <div id="title" class="text-3xl py-2"></div>
-                <div id="definition" class="text-xl">
+
+        <!-- Displays a definition -->
+        <div id="definition-flex-container" class="flex justify-center">
+
+            <!-- Definition -->         
+            <div id="def-container" class="bg-gray-50 rounded-md opacity-75 py-5 mt-5 shadow-slate-800">
+                <div id="title" class="text-3xl py-2 px-5"></div>
+                <div id="definition" class="text-xl px-5 max-w-7xl">
             </div>
+            <!-- New random definition button -->
             <div id="button-container" class="flex justify-center">
-                <button id="get-new-definition" type="button" class="border-2 py-2 px-2 rounded-full bg-sky-300 shadow-lg opacity-100 mt-5 hover:bg-red-400 hover:shadow-inner">Nouvelle définition</button>
+                <button id="get-new-definition" type="button" class="border-2 py-2 px-2 rounded-full bg-sky-300 shadow-lg mt-5 hover:bg-red-400 hover:shadow-inner">Nouvelle définition</button>
             </div>
         </div>
+
     </div>
+
+        <!-- get random definition by category -->
+        <div id="flex-contain-buttons" class="flex justify-around px-5"> 
+            <button id="get-paradigmes" type="button" class="w-60 border-2 py-2 rounded-full bg-sky-300 shadow-lg opacity-80 mt-5 hover:bg-red-400 hover:shadow-inner hover:opacity-100">Paradigmes de programmation</button>
+            <button id="get-langages" type="button" class="w-60 border-2 py-2 rounded-full bg-sky-300 shadow-lg opacity-80 mt-5 hover:bg-red-400 hover:shadow-inner hover:opacity-100">Langages de programmation</button>
+            <button id="get-architecture" type="button" class="w-60 border-2 py-2 rounded-full bg-sky-300 shadow-lg opacity-80 mt-5 hover:bg-red-400 hover:shadow-inner hover:opacity-100">Architecture logiciel</button>
+            <button id="get-systemes-reseau" type="button" class="w-60 border-2 py-2 rounded-full bg-sky-300 shadow-lg opacity-80 mt-5 hover:bg-red-400 hover:shadow-inner hover:opacity-100">Systèmes et réseau</button>
+            <button id="get-test" type="button" class="w-60 border-2 py-2 rounded-full bg-sky-300 shadow-lg opacity-80 mt-5 hover:bg-red-400 hover:shadow-inner hover:opacity-100">Culture du test et bonnes pratiques</button>
+            <button id="get-structures-exec" type="button" class="w-60 border-2 py-2 rounded-full bg-sky-300 shadow-lg opacity-80 mt-5 hover:bg-red-400 hover:shadow-inner hover:opacity-100">Structures d'exécution</button>
+        </div>
+        
+
+        <!-- get list of definitions by category -->
+        <div id="flex-contain-select" class="flex justify-around px-5 mt-5"> 
+            <!-- create select-forms -->
+            <select name="paradigmes" id="select-paradigmes" class="w-40">
+                <option value="">Trouver une définition</option>
+            </select>
+
+            <select name="langages" id="select-langages"  class="w-40">
+                <option value="">random</option>
+                <option value="">Un langage</option>
+            </select>
+
+            <select name="architecture" id="select-architectyre"  class="w-40">
+                <option value="">random</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+            </select>
+
+            <select name="systemes" id="select-systemes" class="w-40">
+                <option value="">random</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+            </select>
+
+            <select name="culture-test" id="select-culture-test"  class="w-40">
+                <option value="blah">random</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+            </select>
+
+            <select name="structures-exec" id="select-structures-exec" class="w-40">
+                <option value="blah">random</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+                <option value="">Un paradigme</option>
+            </select>
+        </div>
+    </div>
+
     <script src="script.js"></script>
     
 </body>
