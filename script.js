@@ -88,7 +88,6 @@ const structuresArray = [];
 const getTitlesStructures = [structuresArray, "/structures-exec"];
 const structuresSelect = document.getElementById("select-structures-exec");
 
-
 // get all titles from a category and push them in an array
 function getAllTitles(catArray, catSelect) {
   // fetch API on category endpoint (as set in catArray[1])
@@ -136,7 +135,7 @@ getAllTitles(getTitlesStructures, structuresSelect);
 paradigmesSelect.onchange = () => {
   let selectValue = paradigmesSelect.value;
   console.log(selectValue);
-  if (selectValue){
+  if (selectValue) {
     categorySwitch = `/paradigmes/${selectValue}`;
     getDefinition();
   }
@@ -145,7 +144,7 @@ paradigmesSelect.onchange = () => {
 langagesSelect.onchange = () => {
   let selectValue = langagesSelect.value;
   console.log(selectValue);
-  if (selectValue){
+  if (selectValue) {
     categorySwitch = `/langages/${selectValue}`;
     getDefinition();
   }
@@ -154,8 +153,8 @@ langagesSelect.onchange = () => {
 architectureSelect.onchange = () => {
   let selectValue = architectureSelect.value;
   console.log(selectValue);
-  if (selectValue){
-    categorySwitch = `/langages/${selectValue}`;
+  if (selectValue) {
+    categorySwitch = `/architecture/${selectValue}`;
     getDefinition();
   }
 };
@@ -163,7 +162,7 @@ architectureSelect.onchange = () => {
 systemesSelect.onchange = () => {
   let selectValue = systemesSelect.value;
   console.log(selectValue);
-  if (selectValue){
+  if (selectValue) {
     categorySwitch = `/systemes-reseau/${selectValue}`;
     getDefinition();
   }
@@ -172,7 +171,7 @@ systemesSelect.onchange = () => {
 testCultureSelect.onchange = () => {
   let selectValue = testCultureSelect.value;
   console.log(selectValue);
-  if (selectValue){
+  if (selectValue) {
     categorySwitch = `/culture-test/${selectValue}`;
     getDefinition();
   }
@@ -181,9 +180,8 @@ testCultureSelect.onchange = () => {
 structuresSelect.onchange = () => {
   let selectValue = structuresSelect.value;
   console.log(selectValue);
-  if (selectValue){
+  if (selectValue) {
     categorySwitch = `/structures-exec/${selectValue}`;
     getDefinition();
   }
 };
-
