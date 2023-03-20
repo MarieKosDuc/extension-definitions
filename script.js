@@ -11,7 +11,7 @@ let categorySwitch = "/random";
 
 // ------------ Display a random definition -----------------
 
-// get a random definition from API, all categories mixed
+// get a random definition from API , all categories mixed
 const getDefinition = () => {
   fetch(apiUrl + categorySwitch)
     .then(function (res) {
@@ -152,7 +152,7 @@ langagesSelect.onchange = () => {
 
 architectureSelect.onchange = () => {
   let selectValue = architectureSelect.value;
-  // console.log(selectValue);
+  console.log(selectValue);
   if (selectValue) {
     categorySwitch = `/architecture/${selectValue}`;
     getDefinition();
@@ -161,9 +161,9 @@ architectureSelect.onchange = () => {
 
 systemesSelect.onchange = () => {
   let selectValue = systemesSelect.value;
-  // console.log(selectValue);
+  console.log(selectValue);
   if (selectValue) {
-    categorySwitch = `/systemes-reseau/${selectValue}`;
+    categorySwitch = `/systeme-reseau/${selectValue}`;
     getDefinition();
   }
 };
