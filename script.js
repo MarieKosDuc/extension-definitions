@@ -152,7 +152,7 @@ langagesSelect.onchange = () => {
 
 architectureSelect.onchange = () => {
   let selectValue = architectureSelect.value;
-  console.log(selectValue);
+  // console.log(selectValue);
   if (selectValue) {
     categorySwitch = `/architecture/${selectValue}`;
     getDefinition();
@@ -161,7 +161,7 @@ architectureSelect.onchange = () => {
 
 systemesSelect.onchange = () => {
   let selectValue = systemesSelect.value;
-  console.log(selectValue);
+  // console.log(selectValue);
   if (selectValue) {
     categorySwitch = `/systeme-reseau/${selectValue}`;
     getDefinition();
